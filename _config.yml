@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
+title: 清风
+subtitle: 窈窕君子 谁懂我心
+description: 珲少的文集
+keywords: 文集
+author: 珲少
+language: zh-CN
 timezone:
 
 # URL
@@ -81,3 +81,24 @@ deploy:
   type: git
   repository: git@github.com:ZYHshao/HuiShao-s-pen.git
   branch: gh-pages
+
+# Srarch
+## json content
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true

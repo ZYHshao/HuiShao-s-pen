@@ -1,398 +1,288 @@
-<!DOCTYPE html>
-<html>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script> 
+<script>
+　　let models = [
+    "https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json",
+    "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+    "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+    "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",
+    "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",
+    "https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json"
+];
+let m = models[Math.round(Math.random()*5)];
+　　L2Dwidget.init({ 
+　　"model": {jsonPath:m,"scale": 1 }, 
+　　"display": { "position": "left", "width": 200, "height": 300,"hOffset": 0, "vOffset": -20 }, 
+　　"mobile": { "show": true, "scale": 0.5 }, 
+　　"react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 } });
+</script> 
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>最幸福 | 清风</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-    <meta name="description" content="珲少的文集">
-  
-  
-    <meta name="keywords" content="文集">
-  
-  
-    <link rel="alternate" href="/" title="清风">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-  
-  
-    <link rel="stylesheet" href="/localshare/css/share.css">
-  
-  
-  
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="清风">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://huisao.cc">
+    <meta name="referrer" content="no-referrer"/>
+    <!--SEO-->
+
+<meta name="description" content="珲少的文集"/>
+
+
+
+<meta name="keywords" content="文集"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>最幸福 | 清风</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="清风" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+
+
+    
 </head>
 
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">清风</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">窈窕君子 谁懂我心</a>
-        </h2>
-      
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.png)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='珲少'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                <h2> 窈窕君子 谁懂我心 </h2>
+            
+    	</div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        
-          <a class="main-nav-link" href="/."><i class="fa fa-home"></i> 首页</a>
-        
-          <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> 归档</a>
-        
-          <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> 关于</a>
-        
-          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> 订阅</a>
-        
-      </nav>
-    </div>
-    <div id="search-form">
-      <div id="result-mask" class="hide"></div>
-      <label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label>
-      <div id="result-wrap" class="hide">
-        <div id="search-result"></div>
-      </div>
-      <div class="hide">
-        <template id="search-tpl">
-          <div class="item">
-            <a href="/{path}" title="{title}">
-              <div class="title">{title}</div>
-              <div class="time">{date}</div>
-              <div class="tags">{tags}</div>
-            </a>
-          </div>
-        </template>
-      </div>
-    </div>
-  </div>
 </header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://huisao.cc">清风</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>主页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>归档</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="最幸福">
+            
+	            最幸福
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/不忘初心">
+            不忘初心
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/散文" title='散文'>
+                        散文
+                    </a>
+                
+            
+        </span>
+    </span>
+    
 
-      <div class="outer">
-        <section id="main"><article id="post-292zuixingfu" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner">
     
-    
-      <header class="article-header">
         
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      最幸福
-    </h1>
-  
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2012/05/13</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>&emsp;&emsp;我一直认为我的思维是理性的，我喜欢数学、物理、化学，并非这些科目本身多么有意思，我喜欢的是这些科目的繁杂对我思维的挑战。我试过仅凭口算计算一长串的公式，试过闭上眼睛仅凭想象来解几何题，虽然结果并不怎么好，我却陶醉其中，并乐此不疲。<br><a id="more"></a><br>&emsp;&emsp;可我一直引以为豪的，不是理性，而是我感性的思维。我不是一个易冲动的人，但却是一个易感动的人。历史的凝重可以使我感动，诗歌的怀柔可以使我感动，音曲的辗转可以使我感动，故事的惆怅也可以使我感动……所以，看一部电影，读一首短诗，听一曲音乐，体会一个故事时都会忍不住眼眶晶莹，但泪水却很少滑下过。不是因为理性的抑制，而是我将将要夺眶而出的眼泪酝酿作墨泉，从笔尖流出，倾泻于纸张，浸染于字里行间。<br>&emsp;&emsp;最伟大的爱，便是最平凡的爱，是那日日夜夜就在身边从未曾离去又平平淡淡细腻无声常无所察觉的爱，那是父母的爱。平淡到无法表达又深刻到锥心刺骨。回想起来，《送你的诗》送给了给了我忧伤与快乐的同学和朋友们；《我的成长》送给了给了我成长与希望的老师，今天，就把《最幸福》送给给了我生命与灵魂的父母，祝妈妈母亲节快乐。<br>&emsp;&emsp;我不知是从何时开始探寻幸福的意义的，小学时认为的幸福就是每周六日可以去姐姐那玩电脑，打游戏；在学校时可以每天放学拍画片，装四驱车。这就是我过着的也是我认为的幸福的日子。那时的想法很简单：生活无限长，单纯的认为可以一直重复着简单而又有趣的生活。后来上了初中，老师的德育让我有了脱胎换骨的改变，让我从不务正业每天打架到学习钻研刻苦努力。真的，那时的幸福便是对知识的渴望。每天晚上睡觉前都感觉到我在不断的强壮，无论是身体，还是思想。记得那时候爸爸还笑妈妈说：你这么易满足，对我的成绩就这么满足了，要求一点也不严。妈妈没有给我要求，却给了我我过着的也是我认为的幸福的日子。后来上了高中，熬过一年痛苦的生活，终于看到了希望，可没多久，就进入了别人谈虎色变的“黑色高三”，我说别人，是因为我打心眼里觉得高三是我最色彩绚丽的一年，一生最难忘的一次愚人节，一生最难忘的一份生日礼物，还有许许多多的故事。我想，如果我以后成名了，那一定会成为我回忆录的一部分，如果我没有出名，那便是我茶余饭后的谈资。之所以有如此丰富多彩的生活，是因为我的自信，我之所以自信，是因为妈妈始终相信我，无论我在成功的山峰，还是失败的低谷，有了这份信任，我便坚定无比，我便无所畏惧。<br>&emsp;&emsp;我真的改变了很多，从爱贪便宜到光明磊落，从小肚鸡肠到心怀宽广，从害羞自闭到自然大方，从出言不逊到谈笑得当。妈妈对我的影响是最大的，有些是言传的，有些是身教的，更多是既非言传也非身教的，一个爱字，便什么都有了。随着我而改变的，还有我的梦想。小学时的我没有梦想，初中时的我梦想着改变世界，扭转乾坤。高中时，可能意识到了能力有限，梦想便成了一生奉献，即使微不足道。<br>&emsp;&emsp;现在上大学了，第一次感到了迷惘，是现实与理想的落差也好，是压力与疲惫的麻木也罢。总之，第一次感到了害怕，害怕长大，害怕身边的改变。但是我明白，只有经历烈火的锤炼，才能蜕变为凤凰，所以我坚持不懈，所以我敢去担当。都说孩子要从小多让锻炼，适应力才强。可是他们不明白，只要有一颗强大的心灵，遇到再大的困难也能迎刃而解。妈妈没有给我太多生活的技能，却给了我一颗强大的心灵，并将是我受用一生。<br>&emsp;&emsp;关于我，就说这么多吧，再送给妈妈我迷迷糊糊中明白了的几条道理：<br>&emsp;&emsp;一：平静自然，调理心性。原来一直很自傲，认为没有什么事会尽全力做不到，也确实没有为什么事真正尽过全力。如今在团委，一边作办公室的工作，一边担宣传部的值，再加上上课，真的有感到力不从心。可是无论事再多，无论工作在繁杂，我从来没有失眠过，也从来没有因此而脾气浮躁过。工作是就专心工作，学习时就安心学习。再难的事，只要去想，总会有解决的办法，心态平静，便无焦无燥，便是幸福。所以妈妈在生活中无论遇到什么不顺，都没有关系啦，无故加之过而目不怒；泰山崩于前而色不变。心性平静便是生活中处理一切矛盾的禅宗。<br>&emsp;&emsp;二：享受生活，忙里偷闲。平时再忙，我也能抽出二十分钟的时间去学习，去看书，当然，也就能抽出二十分钟的时间去玩电脑，打游戏。工作不是生活的全部，快乐才是第一要义。所以，妈妈和爸爸，没事上上网，打打牌，练练瑜伽，都很不错，我都非常支持。<br>&emsp;&emsp;三：潇洒坦荡，知行合一。有句歌词说：口是心非的人总是在夜里翻来覆去的。所以我想，心里有着一杆秤，不用担心太多，做事问心无愧，每天便是幸福的。<br>&emsp;&emsp;四：随心而为，想做就做。想做什么就做什么，不去担心别人怎么看，如何说。抑制自己内心的渴望是一种痛苦，所以，打开世俗的禁锢，解放自己，得到内心的自由，便是最幸福的。<br>&emsp;&emsp;幸福是什么？或许我现在也不知道，我如今的梦想便是我们一家人都每天过的很幸福。妈妈小学时给了我游戏的幸福，初中时给了我自由的幸福，高中时给了我信任的幸福。我始终是最幸福的，无论是从前，如今，还是将来。所以，爸妈也要是最幸福的，无论是从前，如今，还是将来。<br>&emsp;&emsp;这封信不是母亲节的礼物，礼物是我的成长，当然成长一直在，我只是在帮你们回顾。记得从前爸爸脾气很坏，也记得爸爸曾给我写了一封信，说很佩服我，还承诺改变坏脾气。如今我也很佩服爸爸，因为爸爸做到了。我想是我的努力使爸爸改变了，我也想通过我的努力，让妈妈更幸福，至少，感到更幸福。好了，最后祝愿爸妈身体健康，天天幸福快乐。还有，再次祝妈妈母亲节快乐！</p>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © 微信：15137348047
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2012/05/14/288kewangshenghuo/" class="pre-post btn btn-default" title='渴望生活'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">渴望生活</span>
+        </a>
+    
+    
+        <a href="/2012/05/09/291gaunyuchengxin/" class="next-post btn btn-default" title='关于诚信'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">关于诚信</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
 
 
-      </header>
-    
-    <div class="article-meta">
-      
-      <span class="article-date">
-  <i class="fa fa-date"></i>
-  <time class="dt-published" datetime="2012-05-13T07:48:08.000Z" itemprop="datePublished">2012年05月13日</time>
-</span>
-      
-  <div class="article-category">
-    <i class="fa fa-classify"></i>
-    <a class="article-category-link" href="/categories/不忘初心/">不忘初心</a>
-  </div>
+    <div id="comments">
+        
+	
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNzY0Ny8xNDE3OA==">
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  </script>
+</div>
 
-      
-        <span class="article-views">
-  <i class="fa fa-views"></i>
-  <i id="busuanzi_container_page_pv">
-      <i id="busuanzi_value_page_pv"></i>
-  </i>
-</span>
 
-      
-      
-<a href="/2012/05/13/292zuixingfu/#comments" class="article-comment-link">
-  
-    
-    
-    
-    
-    
-  
-  <i class="fa fa-commt"></i>
-  留言
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">文章目录</h3>
+        
+            <p>暂无目录</p>
+        
+    </div>
+</aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+	<i class="fa fa-chevron-up"></i>
 </a>
 
 
-    </div>
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>&emsp;&emsp;我一直认为我的思维是理性的，我喜欢数学、物理、化学，并非这些科目本身多么有意思，我喜欢的是这些科目的繁杂对我思维的挑战。我试过仅凭口算计算一长串的公式，试过闭上眼睛仅凭想象来解几何题，虽然结果并不怎么好，我却陶醉其中，并乐此不疲。<br><a id="more"></a><br>&emsp;&emsp;可我一直引以为豪的，不是理性，而是我感性的思维。我不是一个易冲动的人，但却是一个易感动的人。历史的凝重可以使我感动，诗歌的怀柔可以使我感动，音曲的辗转可以使我感动，故事的惆怅也可以使我感动……所以，看一部电影，读一首短诗，听一曲音乐，体会一个故事时都会忍不住眼眶晶莹，但泪水却很少滑下过。不是因为理性的抑制，而是我将将要夺眶而出的眼泪酝酿作墨泉，从笔尖流出，倾泻于纸张，浸染于字里行间。<br>&emsp;&emsp;最伟大的爱，便是最平凡的爱，是那日日夜夜就在身边从未曾离去又平平淡淡细腻无声常无所察觉的爱，那是父母的爱。平淡到无法表达又深刻到锥心刺骨。回想起来，《送你的诗》送给了给了我忧伤与快乐的同学和朋友们；《我的成长》送给了给了我成长与希望的老师，今天，就把《最幸福》送给给了我生命与灵魂的父母，祝妈妈母亲节快乐。<br>&emsp;&emsp;我不知是从何时开始探寻幸福的意义的，小学时认为的幸福就是每周六日可以去姐姐那玩电脑，打游戏；在学校时可以每天放学拍画片，装四驱车。这就是我过着的也是我认为的幸福的日子。那时的想法很简单：生活无限长，单纯的认为可以一直重复着简单而又有趣的生活。后来上了初中，老师的德育让我有了脱胎换骨的改变，让我从不务正业每天打架到学习钻研刻苦努力。真的，那时的幸福便是对知识的渴望。每天晚上睡觉前都感觉到我在不断的强壮，无论是身体，还是思想。记得那时候爸爸还笑妈妈说：你这么易满足，对我的成绩就这么满足了，要求一点也不严。妈妈没有给我要求，却给了我我过着的也是我认为的幸福的日子。后来上了高中，熬过一年痛苦的生活，终于看到了希望，可没多久，就进入了别人谈虎色变的“黑色高三”，我说别人，是因为我打心眼里觉得高三是我最色彩绚丽的一年，一生最难忘的一次愚人节，一生最难忘的一份生日礼物，还有许许多多的故事。我想，如果我以后成名了，那一定会成为我回忆录的一部分，如果我没有出名，那便是我茶余饭后的谈资。之所以有如此丰富多彩的生活，是因为我的自信，我之所以自信，是因为妈妈始终相信我，无论我在成功的山峰，还是失败的低谷，有了这份信任，我便坚定无比，我便无所畏惧。<br>&emsp;&emsp;我真的改变了很多，从爱贪便宜到光明磊落，从小肚鸡肠到心怀宽广，从害羞自闭到自然大方，从出言不逊到谈笑得当。妈妈对我的影响是最大的，有些是言传的，有些是身教的，更多是既非言传也非身教的，一个爱字，便什么都有了。随着我而改变的，还有我的梦想。小学时的我没有梦想，初中时的我梦想着改变世界，扭转乾坤。高中时，可能意识到了能力有限，梦想便成了一生奉献，即使微不足道。<br>&emsp;&emsp;现在上大学了，第一次感到了迷惘，是现实与理想的落差也好，是压力与疲惫的麻木也罢。总之，第一次感到了害怕，害怕长大，害怕身边的改变。但是我明白，只有经历烈火的锤炼，才能蜕变为凤凰，所以我坚持不懈，所以我敢去担当。都说孩子要从小多让锻炼，适应力才强。可是他们不明白，只要有一颗强大的心灵，遇到再大的困难也能迎刃而解。妈妈没有给我太多生活的技能，却给了我一颗强大的心灵，并将是我受用一生。<br>&emsp;&emsp;关于我，就说这么多吧，再送给妈妈我迷迷糊糊中明白了的几条道理：<br>&emsp;&emsp;一：平静自然，调理心性。原来一直很自傲，认为没有什么事会尽全力做不到，也确实没有为什么事真正尽过全力。如今在团委，一边作办公室的工作，一边担宣传部的值，再加上上课，真的有感到力不从心。可是无论事再多，无论工作在繁杂，我从来没有失眠过，也从来没有因此而脾气浮躁过。工作是就专心工作，学习时就安心学习。再难的事，只要去想，总会有解决的办法，心态平静，便无焦无燥，便是幸福。所以妈妈在生活中无论遇到什么不顺，都没有关系啦，无故加之过而目不怒；泰山崩于前而色不变。心性平静便是生活中处理一切矛盾的禅宗。<br>&emsp;&emsp;二：享受生活，忙里偷闲。平时再忙，我也能抽出二十分钟的时间去学习，去看书，当然，也就能抽出二十分钟的时间去玩电脑，打游戏。工作不是生活的全部，快乐才是第一要义。所以，妈妈和爸爸，没事上上网，打打牌，练练瑜伽，都很不错，我都非常支持。<br>&emsp;&emsp;三：潇洒坦荡，知行合一。有句歌词说：口是心非的人总是在夜里翻来覆去的。所以我想，心里有着一杆秤，不用担心太多，做事问心无愧，每天便是幸福的。<br>&emsp;&emsp;四：随心而为，想做就做。想做什么就做什么，不去担心别人怎么看，如何说。抑制自己内心的渴望是一种痛苦，所以，打开世俗的禁锢，解放自己，得到内心的自由，便是最幸福的。<br>&emsp;&emsp;幸福是什么？或许我现在也不知道，我如今的梦想便是我们一家人都每天过的很幸福。妈妈小学时给了我游戏的幸福，初中时给了我自由的幸福，高中时给了我信任的幸福。我始终是最幸福的，无论是从前，如今，还是将来。所以，爸妈也要是最幸福的，无论是从前，如今，还是将来。<br>&emsp;&emsp;这封信不是母亲节的礼物，礼物是我的成长，当然成长一直在，我只是在帮你们回顾。记得从前爸爸脾气很坏，也记得爸爸曾给我写了一封信，说很佩服我，还承诺改变坏脾气。如今我也很佩服爸爸，因为爸爸做到了。我想是我的努力使爸爸改变了，我也想通过我的努力，让妈妈更幸福，至少，感到更幸福。好了，最后祝愿爸妈身体健康，天天幸福快乐。还有，再次祝妈妈母亲节快乐！</p>
-
-        
-            <div id="toc-article">
-                
-  <div class="widget-wrap" id="toc-wrap">
-    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
-    <div class="widget">
-      
-    </div>
-  </div>
 
 
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
             </div>
-        
-        
-          <blockquote id="copyright">
-              <p>原文链接: <a href="http://huisao.cc/2012/05/13/292zuixingfu/">http://huisao.cc/2012/05/13/292zuixingfu/</a></p>
-              <p>版权声明: 转载请注明出处.</p>
-          </blockquote>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <div class="article-tag-wrap">
-          
-
-          
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/散文/">散文</a></li></ul>
-
-          
-    <div class="social-share">
-      <span>分享到:</span>
-    </div>
-
-
-
         </div>
-      
-      
-        
-<nav id="article-nav">
-  
-    <a href="/2012/05/09/291gaunyuchengxin/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">older</strong>
-      <div class="article-nav-title">
-        
-          关于诚信
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2012/05/14/288kewangshenghuo/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
-      <div class="article-nav-title">
-        
-          渴望生活
-        
-      </div>
-    </a>
-  
-</nav>
-
-      
-      
-        
-
-
-
-
-  <div id="comments"><div id="lv-container" data-uid="MTAyMC8zNzY0Ny8xNDE3OA==" data-id="city"></div></div>
-
-
-
-
-
-      
-    </footer>
-  </div>
-</article>
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-posts"></i> 最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/07/30/336偶记/">偶记</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/335拾笔尘沙12/">第一章 第十二回 惨遭社会毒打的仁义之君——宋襄公的称霸梦</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/334拾笔尘沙11/">第一章 第十一回 退避三舍与烛之武退秦师——晋国称霸之路</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/333拾笔尘沙10/">第一章 第十回 艰辛历尽终得正果——晋文公称霸</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/332拾笔尘沙9/">第一章 第九回 一代霸主的艰辛流亡路——重耳大器晚成</a>
-          </li>
-        
-      </ul>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/历史/" style="font-size: 15px;">历史</a> <a href="/tags/古典诗词/" style="font-size: 18.75px;">古典诗词</a> <a href="/tags/小说/" style="font-size: 13.75px;">小说</a> <a href="/tags/散文/" style="font-size: 11.25px;">散文</a> <a href="/tags/散文诗/" style="font-size: 12.5px;">散文诗</a> <a href="/tags/杂文/" style="font-size: 16.25px;">杂文</a> <a href="/tags/歌词/" style="font-size: 17.5px;">歌词</a> <a href="/tags/现代诗/" style="font-size: 20px;">现代诗</a> <a href="/tags/静夜思/" style="font-size: 10px;">静夜思</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-classify"></i> 分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/不忘初心/">不忘初心</a><span class="category-list-count">41</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/为你写诗/">为你写诗</a><span class="category-list-count">65</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/唐风/">唐风</a><span class="category-list-count">74</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/宋韵/">宋韵</a><span class="category-list-count">43</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思辨/">思辨</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/情为何物/">情为何物</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/拾笔尘沙/">拾笔尘沙</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/清风/">清风</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/看看世界/">看看世界</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/边走边唱/">边走边唱</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/静夜思/">静夜思</a><span class="category-list-count">17</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-archive"></i> 归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021年</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016年</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014年</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012年</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011年</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010年</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009年</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/">2008年</a><span class="archive-list-count">43</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007年</a><span class="archive-list-count">216</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/历史/">历史</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/古典诗词/">古典诗词</a><span class="tag-list-count">117</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小说/">小说</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/散文/">散文</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/散文诗/">散文诗</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/杂文/">杂文</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/歌词/">歌词</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/现代诗/">现代诗</a><span class="tag-list-count">159</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/静夜思/">静夜思</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-link"></i> 友情链接</h3>
-    <div class="widget">
-      <ul>
-      
-        <li>
-          <a href="http://huishao.cc">技术</a>
-        </li>
-      
-      </ul>
-    </div>
-  </div>
-
-
-  
-</aside>
-        
-      </div>
-      <a id="totop" href="#top"></a>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      <p>
-        <a href="/sitemap.xml">网站地图</a>
-        <span> | </span><a href="/atom.xml">订阅本站</a>
-        <span> | </span><a href="/about/">联系博主</a>
-      </p>
-      
-        <p>
-          <i class="fa fa-visitors"></i>
-          <i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>
-          ，
-          <i class="fa fa-views"></i>
-          <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>
-        </p>
-      
-      <p>
-        <span>Copyright &copy; 2023 珲少.</span>
-        <span>Theme by <a href="https://github.com/chaooo/hexo-theme-BlueLake/" target="_blank">BlueLake.</a></span>
-        <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo.</a></span>
-      </p>
-    </div>
-  </div>
-</footer>
-
-    </div>
-  </div>
-  <script src="/js/jquery-3.4.1.min.js"></script>
-<script src="/js/search.json.js"></script>
-
-  <script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-<script src="/js/script.js"></script>
+</div>
 
 
 
-
-
-  <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-  
-    <script src="/localshare/js/social-share.js"></script>
-    <script src="/localshare/js/qrcode.js"></script>
-  
-  
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-    <script>
-      (function(d, s) {
-        var j, e = d.getElementsByTagName('body')[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.appendChild(j);
-      })(document, 'script');
-    </script>
-  
-
-  
-
-  
-
-  
-  
-
-
-
+<script src="/js/app.js?rev=@@hash"></script>
 
 
 </body>

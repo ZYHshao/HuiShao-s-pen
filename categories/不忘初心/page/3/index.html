@@ -1,400 +1,517 @@
-<!DOCTYPE html>
-<html>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script> 
+<script>
+　　let models = [
+    "https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json",
+    "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+    "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+    "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",
+    "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",
+    "https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json"
+];
+let m = models[Math.round(Math.random()*5)];
+　　L2Dwidget.init({ 
+　　"model": {jsonPath:m,"scale": 1 }, 
+　　"display": { "position": "left", "width": 200, "height": 300,"hOffset": 0, "vOffset": -20 }, 
+　　"mobile": { "show": true, "scale": 0.5 }, 
+　　"react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 } });
+</script> 
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>category: 不忘初心 | 清风</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-    <meta name="description" content="珲少的文集">
-  
-  
-    <meta name="keywords" content="文集">
-  
-  
-    <link rel="alternate" href="/" title="清风">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-  
-  
-    <link rel="stylesheet" href="/localshare/css/share.css">
-  
-  
-  
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="清风">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://huisao.cc">
+    <meta name="referrer" content="no-referrer"/>
+    <!--SEO-->
+
+<meta name="description" content="珲少的文集"/>
+
+
+
+<meta name="keywords" content="文集"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>分类: 不忘初心 | 清风</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="清风" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+
+
+    
 </head>
 
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">清风</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">窈窕君子 谁懂我心</a>
-        </h2>
-      
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.png)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='珲少'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                <h2> 窈窕君子 谁懂我心 </h2>
+            
+    	</div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        
-          <a class="main-nav-link" href="/."><i class="fa fa-home"></i> 首页</a>
-        
-          <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> 归档</a>
-        
-          <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> 关于</a>
-        
-          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> 订阅</a>
-        
-      </nav>
-    </div>
-    <div id="search-form">
-      <div id="result-mask" class="hide"></div>
-      <label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label>
-      <div id="result-wrap" class="hide">
-        <div id="search-result"></div>
-      </div>
-      <div class="hide">
-        <template id="search-tpl">
-          <div class="item">
-            <a href="/{path}" title="{title}">
-              <div class="title">{title}</div>
-              <div class="time">{date}</div>
-              <div class="tags">{tags}</div>
-            </a>
-          </div>
-        </template>
-      </div>
-    </div>
-  </div>
 </header>
-
-      <div class="outer">
-        <section id="main">
-
-  
-  
-    
-    
-    <section class="archives-wrap">
-      <div class="archive-title">
-        
-          <i class="fa fa-classify"></i>
-          不忘初心
-        
-      </div>
-      <div class="archives">
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/09/09/193shuihaihui/">
-      <time class="dt-published" datetime="2007-09-09T07:48:08.000Z" itemprop="datePublished">2007年09月09日</time>
-      | <span class="archive-article-title">谁还会……</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/08/24/178wangbuliao/">
-      <time class="dt-published" datetime="2007-08-23T17:38:08.000Z" itemprop="datePublished">2007年08月24日</time>
-      | <span class="archive-article-title">忘不了</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/08/10/166xuesheng/">
-      <time class="dt-published" datetime="2007-08-10T10:38:08.000Z" itemprop="datePublished">2007年08月10日</time>
-      | <span class="archive-article-title">学生</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/07/21/133guzhou/">
-      <time class="dt-published" datetime="2007-07-20T21:38:08.000Z" itemprop="datePublished">2007年07月21日</time>
-      | <span class="archive-article-title">孤舟</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/07/16/123bian/">
-      <time class="dt-published" datetime="2007-07-16T07:20:20.000Z" itemprop="datePublished">2007年07月16日</time>
-      | <span class="archive-article-title">彼岸</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/07/06/108dongshishui/">
-      <time class="dt-published" datetime="2007-07-06T12:08:08.000Z" itemprop="datePublished">2007年07月06日</time>
-      | <span class="archive-article-title">东逝水</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/06/29/91yaoyuandexingfu/">
-      <time class="dt-published" datetime="2007-06-29T06:08:08.000Z" itemprop="datePublished">2007年06月29日</time>
-      | <span class="archive-article-title">遥远的幸福</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/06/26/83qingchunqu/">
-      <time class="dt-published" datetime="2007-06-26T08:08:08.000Z" itemprop="datePublished">2007年06月26日</time>
-      | <span class="archive-article-title">青春曲</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/06/25/81qingchunzou/">
-      <time class="dt-published" datetime="2007-06-25T08:08:08.000Z" itemprop="datePublished">2007年06月25日</time>
-      | <span class="archive-article-title">青春奏</span>
-    </a>
-  </li>
-</ul>
-
-
-  
-  
-  <ul class="archive-article archive-type-post">
-  <li class="archive-article-inner">
-    <a href="/2007/06/25/80xingluren/">
-      <time class="dt-published" datetime="2007-06-24T18:08:08.000Z" itemprop="datePublished">2007年06月25日</time>
-      | <span class="archive-article-title">行路人</span>
-    </a>
-  </li>
-</ul>
-
-
-
-  </div></section>
-
-
-    <nav id="page-nav">
-
-<a class="extend prev" rel="prev" href="/categories/不忘初心/page/2/">上一页</a><a class="page-number" href="/categories/不忘初心/">1</a><a class="page-number" href="/categories/不忘初心/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/categories/不忘初心/page/4/">4</a><a class="page-number" href="/categories/不忘初心/page/5/">5</a><a class="extend next" rel="next" href="/categories/不忘初心/page/4/">下一页</a>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://huisao.cc">清风</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>主页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>归档</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </nav>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content ">
+                    <h3> 
     
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-posts"></i> 最新文章</h3>
+        不忘初心 
+    
+</h3>
+
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/09/09/193shuihaihui/">谁还会……</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年09月09日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    在学校，很多同学的学习目标都变了质。所以用身心疲惫换了暂时的成绩，其实学习并不苦，只是被学生感觉苦了。这种“苦”的感觉来在哪里？还是缺少沟通吧？…
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/08/24/178wangbuliao/">忘不了</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年08月24日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    当岁月在我们的年轮上刻了一圈又一圈人生便像沧海中的一帆飘摇，流荡在大浪里沉沉浮浮忘不了那离港的喧嚣忘不了那起航的惆怅…
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/08/10/166xuesheng/">学生</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年08月10日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    （喜）
+一盏灯照亮了前方那时我们向往的学堂喜欢坐在课桌前的模样幼稚又成熟了脸庞…
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/07/21/133guzhou/">孤舟</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年07月21日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    海中的波浪沸腾里面容着胆量把无限天空和海洋都装进——胸膛…
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/07/16/123bian/">彼岸</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年07月16日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    追寻，追寻在飘渺的雾中隐约出现了彼岸渴望，渴望现实与梦幻创造了花样的彼岸疯狂，疯狂为理想的彼岸无悔的奋发图强
+远方有着我想到的地方我叫那彼岸前方有着我理想的地方可能很遥远一目望去仙岛时阴时现彼岸在眼前也在脚下
+汗水和泪水铸成了船是通向...
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/07/06/108dongshishui/">东逝水</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年07月06日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    当空虚已成为无奈时心就好像被麻痹再也找不到预定的目标如迷失在海中的小舟不知何处是岸…
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/06/29/91yaoyuandexingfu/">遥远的幸福</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年06月29日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    （一）一桌世界上最美味的宴会一套世界上最华丽的服饰送给你幸福吗？不，我说…
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/06/26/83qingchunqu/">青春曲</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年06月26日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    如果我要去耕作一片荒田如果我要去迎接一夜黑天那么我愿将自己留在童年留在天真无邪的田野边守望阳光的笑脸…
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/06/25/81qingchunzou/">青春奏</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年06月25日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    是时间走的太快还是生命本身就太短？是今天转眼成了昨日还是明日已经成了今天？我回头看看曾走过的路看到一个朋友她说：她叫童年…
+                
+            </p> 
+        </div>
+    </article>
+ 
+    <article class="post">
+        
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2007/06/25/80xingluren/">行路人</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2007年06月25日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    他拿起行囊说要做一个行路人他忘记了安逸学会了冒险也多了一份雄心壮志…
+                
+            </p> 
+        </div>
+    </article>
+ 
+
+
+    <nav class="pagination" role="navigation">
+        <div id="page-nav">
+            <a class="extend prev" rel="prev" href="/categories/不忘初心/page/2/"><i class='fa fa-angle-left'></i></a><a class="page-number" href="/categories/不忘初心/">1</a><a class="page-number" href="/categories/不忘初心/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/categories/不忘初心/page/4/">4</a><a class="page-number" href="/categories/不忘初心/page/5/">5</a><a class="extend next" rel="next" href="/categories/不忘初心/page/4/"><i class='fa fa-angle-right'></i></a>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+                </main>
+                
+                    
+    <aside class="col-md-4 sidebar">
+        
+        
     <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/07/30/336偶记/">偶记</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/335拾笔尘沙12/">第一章 第十二回 惨遭社会毒打的仁义之君——宋襄公的称霸梦</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/334拾笔尘沙11/">第一章 第十一回 退避三舍与烛之武退秦师——晋国称霸之路</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/333拾笔尘沙10/">第一章 第十回 艰辛历尽终得正果——晋文公称霸</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/332拾笔尘沙9/">第一章 第九回 一代霸主的艰辛流亡路——重耳大器晚成</a>
-          </li>
-        
-      </ul>
+        <h3 class="title">搜索</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢？">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
     </div>
-  </div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/历史/" style="font-size: 15px;">历史</a> <a href="/tags/古典诗词/" style="font-size: 18.75px;">古典诗词</a> <a href="/tags/小说/" style="font-size: 13.75px;">小说</a> <a href="/tags/散文/" style="font-size: 11.25px;">散文</a> <a href="/tags/散文诗/" style="font-size: 12.5px;">散文诗</a> <a href="/tags/杂文/" style="font-size: 16.25px;">杂文</a> <a href="/tags/歌词/" style="font-size: 17.5px;">歌词</a> <a href="/tags/现代诗/" style="font-size: 20px;">现代诗</a> <a href="/tags/静夜思/" style="font-size: 10px;">静夜思</a>
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p>欢迎访问珲少的情怀博客 <br/>
+</p>
+        </div>
     </div>
-  </div>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-classify"></i> 分类</h3>
+        
+        
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/不忘初心/">不忘初心</a><span class="category-list-count">41</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/为你写诗/">为你写诗</a><span class="category-list-count">65</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/唐风/">唐风</a><span class="category-list-count">74</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/宋韵/">宋韵</a><span class="category-list-count">43</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思辨/">思辨</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/情为何物/">情为何物</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/拾笔尘沙/">拾笔尘沙</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/清风/">清风</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/看看世界/">看看世界</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/边走边唱/">边走边唱</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/静夜思/">静夜思</a><span class="category-list-count">17</span></li></ul>
+      <h3 class="title">社交</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/ZYHshao" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="mailto:316045346@qq.com" rel="external nofollow" title="邮箱" target="_blank">
+			    	<i class="envelope-o fa fa-envelope-o"></i>
+			    </a>
+            
+	            <a href="tencent://Message/?Uin=316045346&amp;websiteName=q-zone.qq.com&amp;Menu=yes" rel="external nofollow" title="联系QQ" target="_blank">
+			    	<i class="qq fa fa-qq"></i>
+			    </a>
+            
+        </div>
     </div>
-  </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-archive"></i> 归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021年</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016年</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014年</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012年</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011年</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010年</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009年</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/">2008年</a><span class="archive-list-count">43</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007年</a><span class="archive-list-count">216</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/历史/">历史</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/古典诗词/">古典诗词</a><span class="tag-list-count">117</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小说/">小说</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/散文/">散文</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/散文诗/">散文诗</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/杂文/">杂文</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/歌词/">歌词</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/现代诗/">现代诗</a><span class="tag-list-count">159</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/静夜思/">静夜思</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-link"></i> 友情链接</h3>
-    <div class="widget">
-      <ul>
-      
-        <li>
-          <a href="http://huishao.cc">技术</a>
-        </li>
-      
-      </ul>
-    </div>
-  </div>
-
-
-  
-</aside>
         
-      </div>
-      <a id="totop" href="#top"></a>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      <p>
-        <a href="/sitemap.xml">网站地图</a>
-        <span> | </span><a href="/atom.xml">订阅本站</a>
-        <span> | </span><a href="/about/">联系博主</a>
-      </p>
-      
-        <p>
-          <i class="fa fa-visitors"></i>
-          <i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>
-          ，
-          <i class="fa fa-views"></i>
-          <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>
-        </p>
-      
-      <p>
-        <span>Copyright &copy; 2023 珲少.</span>
-        <span>Theme by <a href="https://github.com/chaooo/hexo-theme-BlueLake/" target="_blank">BlueLake.</a></span>
-        <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo.</a></span>
-      </p>
+        
+    <div class="widget">
+        <h3 class="title">分类</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/不忘初心/"><i class="fa" aria-hidden="true">不忘初心</i></a><span class="category-list-count">41</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/为你写诗/"><i class="fa" aria-hidden="true">为你写诗</i></a><span class="category-list-count">65</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/唐风/"><i class="fa" aria-hidden="true">唐风</i></a><span class="category-list-count">74</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/宋韵/"><i class="fa" aria-hidden="true">宋韵</i></a><span class="category-list-count">43</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思辨/"><i class="fa" aria-hidden="true">思辨</i></a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/情为何物/"><i class="fa" aria-hidden="true">情为何物</i></a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/拾笔尘沙/"><i class="fa" aria-hidden="true">拾笔尘沙</i></a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/清风/"><i class="fa" aria-hidden="true">清风</i></a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/看看世界/"><i class="fa" aria-hidden="true">看看世界</i></a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/边走边唱/"><i class="fa" aria-hidden="true">边走边唱</i></a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/静夜思/"><i class="fa" aria-hidden="true">静夜思</i></a><span class="category-list-count">17</span></li></ul>
+    </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">归档</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/"><i class="fa" aria-hidden="true">2023年07月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/"><i class="fa" aria-hidden="true">2021年08月</i></a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/"><i class="fa" aria-hidden="true">2020年01月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/"><i class="fa" aria-hidden="true">2018年12月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/"><i class="fa" aria-hidden="true">2018年10月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/"><i class="fa" aria-hidden="true">2018年07月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/"><i class="fa" aria-hidden="true">2017年07月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/"><i class="fa" aria-hidden="true">2017年06月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/"><i class="fa" aria-hidden="true">2016年10月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/"><i class="fa" aria-hidden="true">2016年09月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/"><i class="fa" aria-hidden="true">2016年08月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/"><i class="fa" aria-hidden="true">2015年09月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/"><i class="fa" aria-hidden="true">2014年08月</i></a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/"><i class="fa" aria-hidden="true">2014年06月</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/"><i class="fa" aria-hidden="true">2014年05月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/"><i class="fa" aria-hidden="true">2014年02月</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/"><i class="fa" aria-hidden="true">2013年05月</i></a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/"><i class="fa" aria-hidden="true">2012年10月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/08/"><i class="fa" aria-hidden="true">2012年08月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/"><i class="fa" aria-hidden="true">2012年07月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/05/"><i class="fa" aria-hidden="true">2012年05月</i></a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/"><i class="fa" aria-hidden="true">2012年04月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/10/"><i class="fa" aria-hidden="true">2011年10月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/09/"><i class="fa" aria-hidden="true">2011年09月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/08/"><i class="fa" aria-hidden="true">2011年08月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/07/"><i class="fa" aria-hidden="true">2011年07月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/02/"><i class="fa" aria-hidden="true">2011年02月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/07/"><i class="fa" aria-hidden="true">2010年07月</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/05/"><i class="fa" aria-hidden="true">2010年05月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/02/"><i class="fa" aria-hidden="true">2010年02月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/01/"><i class="fa" aria-hidden="true">2010年01月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/"><i class="fa" aria-hidden="true">2009年11月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/09/"><i class="fa" aria-hidden="true">2009年09月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/"><i class="fa" aria-hidden="true">2009年07月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/"><i class="fa" aria-hidden="true">2009年05月</i></a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/04/"><i class="fa" aria-hidden="true">2009年04月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/02/"><i class="fa" aria-hidden="true">2009年02月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/01/"><i class="fa" aria-hidden="true">2009年01月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/"><i class="fa" aria-hidden="true">2008年12月</i></a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/"><i class="fa" aria-hidden="true">2008年11月</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/"><i class="fa" aria-hidden="true">2008年10月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/09/"><i class="fa" aria-hidden="true">2008年09月</i></a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/"><i class="fa" aria-hidden="true">2008年08月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/07/"><i class="fa" aria-hidden="true">2008年07月</i></a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/06/"><i class="fa" aria-hidden="true">2008年06月</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/05/"><i class="fa" aria-hidden="true">2008年05月</i></a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/04/"><i class="fa" aria-hidden="true">2008年04月</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/02/"><i class="fa" aria-hidden="true">2008年02月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/"><i class="fa" aria-hidden="true">2008年01月</i></a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/12/"><i class="fa" aria-hidden="true">2007年12月</i></a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/11/"><i class="fa" aria-hidden="true">2007年11月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/10/"><i class="fa" aria-hidden="true">2007年10月</i></a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/09/"><i class="fa" aria-hidden="true">2007年09月</i></a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/"><i class="fa" aria-hidden="true">2007年08月</i></a><span class="archive-list-count">37</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/"><i class="fa" aria-hidden="true">2007年07月</i></a><span class="archive-list-count">56</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/06/"><i class="fa" aria-hidden="true">2007年06月</i></a><span class="archive-list-count">43</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/05/"><i class="fa" aria-hidden="true">2007年05月</i></a><span class="archive-list-count">38</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/04/"><i class="fa" aria-hidden="true">2007年04月</i></a><span class="archive-list-count">13</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">标签云</h3>
+    <div class="content tag-cloud">
+        <a href="/tags/历史/" style="font-size: 15px;">历史</a> <a href="/tags/古典诗词/" style="font-size: 18.75px;">古典诗词</a> <a href="/tags/小说/" style="font-size: 13.75px;">小说</a> <a href="/tags/散文/" style="font-size: 11.25px;">散文</a> <a href="/tags/散文诗/" style="font-size: 12.5px;">散文诗</a> <a href="/tags/杂文/" style="font-size: 16.25px;">杂文</a> <a href="/tags/歌词/" style="font-size: 17.5px;">歌词</a> <a href="/tags/现代诗/" style="font-size: 20px;">现代诗</a> <a href="/tags/静夜思/" style="font-size: 10px;">静夜思</a>
     </div>
   </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">友链</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.huishao.cc" class="fa" target="_blank">技术社区</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
 </footer>
 
+<a id="back-to-top" class="icon-btn hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
     </div>
-  </div>
-  <script src="/js/jquery-3.4.1.min.js"></script>
-<script src="/js/search.json.js"></script>
-
-  <script src="/fancybox/jquery.fancybox.min.js"></script>
+</div>
 
 
-<script src="/js/script.js"></script>
+	<script src="/js/search.js?rev=@@hash"></script>
 
 
-
-
-
-  <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-    <script>
-      (function(d, s) {
-        var j, e = d.getElementsByTagName('body')[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.appendChild(j);
-      })(document, 'script');
-    </script>
-  
-
-  
-
-  
-
-  
-  
-
-
-
+<script src="/js/app.js?rev=@@hash"></script>
 
 
 </body>

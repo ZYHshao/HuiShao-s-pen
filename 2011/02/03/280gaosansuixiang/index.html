@@ -1,398 +1,288 @@
-<!DOCTYPE html>
-<html>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script> 
+<script>
+　　let models = [
+    "https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json",
+    "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+    "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+    "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",
+    "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",
+    "https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json"
+];
+let m = models[Math.round(Math.random()*5)];
+　　L2Dwidget.init({ 
+　　"model": {jsonPath:m,"scale": 1 }, 
+　　"display": { "position": "left", "width": 200, "height": 300,"hOffset": 0, "vOffset": -20 }, 
+　　"mobile": { "show": true, "scale": 0.5 }, 
+　　"react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 } });
+</script> 
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>我的高三随想 | 清风</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-    <meta name="description" content="珲少的文集">
-  
-  
-    <meta name="keywords" content="文集">
-  
-  
-    <link rel="alternate" href="/" title="清风">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-  
-  
-    <link rel="stylesheet" href="/localshare/css/share.css">
-  
-  
-  
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="清风">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://huisao.cc">
+    <meta name="referrer" content="no-referrer"/>
+    <!--SEO-->
+
+<meta name="description" content="珲少的文集"/>
+
+
+
+<meta name="keywords" content="文集"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>我的高三随想 | 清风</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="清风" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+
+
+    
 </head>
 
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">清风</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">窈窕君子 谁懂我心</a>
-        </h2>
-      
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.png)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='珲少'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                <h2> 窈窕君子 谁懂我心 </h2>
+            
+    	</div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        
-          <a class="main-nav-link" href="/."><i class="fa fa-home"></i> 首页</a>
-        
-          <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> 归档</a>
-        
-          <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> 关于</a>
-        
-          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> 订阅</a>
-        
-      </nav>
-    </div>
-    <div id="search-form">
-      <div id="result-mask" class="hide"></div>
-      <label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label>
-      <div id="result-wrap" class="hide">
-        <div id="search-result"></div>
-      </div>
-      <div class="hide">
-        <template id="search-tpl">
-          <div class="item">
-            <a href="/{path}" title="{title}">
-              <div class="title">{title}</div>
-              <div class="time">{date}</div>
-              <div class="tags">{tags}</div>
-            </a>
-          </div>
-        </template>
-      </div>
-    </div>
-  </div>
 </header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://huisao.cc">清风</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>主页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>归档</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="我的高三随想">
+            
+	            我的高三随想
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/思辨">
+            思辨
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/杂文" title='杂文'>
+                        杂文
+                    </a>
+                
+            
+        </span>
+    </span>
+    
 
-      <div class="outer">
-        <section id="main"><article id="post-280gaosansuixiang" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner">
     
-    
-      <header class="article-header">
         
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      我的高三随想
-    </h1>
-  
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2011/02/03</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>“充满自信时，记得要谦虚。身陷低谷时，还是要自信。”<br>“在做选择时，时刻要谨慎。作出决定后，一定要坚持。”<br>“忍无可忍时，试着要再忍。紧急需要时，迅速要献身。”<br>“做下等的事，不要怕丢人。身负重任时，勇敢去完成。”<br>“万事要尝试，不要总冒险。心胸坦荡荡，对人不阴险。”<br>“善恶要分明，对人无偏见。进不出风头，退不失节操。”<br>“小事也三思，大事要立断。”<br><a id="more"></a><br>&emsp;&emsp;我想这会是我高中生活的最后一个寒假了，看到案下压的初中为自己写的座右铭，眼睛不禁火辣辣的疼。我长大了，成人了。而我单纯的思想，童真的心灵好像也在随着我的成长而渐渐逝去。“我，是进步了，还是，退步了呢？”<br>&emsp;&emsp;每日都在阳光未出现时来到教室，在明月早已高悬时踏出校门，我们是否想过：每天这样忙碌的生活，我们为的到底是什么？考上个好大学？那考上好大学又是为了什么？找工作，赚钱？你的理想如果仅仅如此，那你大可不必为高三吃这么大的苦，你可以直接去学赚钱。也许会有人说：学习是为了成才。那你是否想过要成什么样的人才？高三，使我们题做的更加的快，也使我们脑袋转的更加的慢。高三改变了很多，它使吊灯从十点熄灭变成通宵未眠，它使眼镜厚度从两毫米变成半厘米。数学本应是最美的，逻辑的推理，思路的前进，无不使人感到峰回路转，柳暗花明。而在高三的阴影下，数学的美感荡然无存，只剩下题海中茫茫海面的单调和行舟人木讷机械的摇浆。作文本是灵感的火花，内心肆意的抒发，而在高三的重压中，它似乎与灵感格格不入了。语文老师说：“高考作文就是带着镣铐在跳舞。”我只是很难想象：带着镣铐跳的舞，是美，还是丑？与其说我们在高考的舞台上展示，倒不如说我们是他的奴隶，任其羞辱。<br>&emsp;&emsp;高三，我们做的题越来越多，学到的知识却越来越少。为了分数，我们学会了做选择时不用看题就得出答案；为了分数，我们学会投机取巧的押题猜题；为了分数，我们学会了格式化的写作文。最终得到的是什么呢？试卷上血淋淋的分数？或许内心虚荣的满足，就是对着一切最好的讽刺。你或许说应试技巧也是一种能力，是投机取巧的能力？是猜碰运气的能力？是压抑自己内心的能力？还是根本没有意义的能力？<br>&emsp;&emsp;经历过高考的人，就不会被什么困难挡住了。是的，高考是能锻炼人的，而为这锻炼付出的代价，是否有点太高了？十二年的寒窗，人生有多少十二年？五个？七个？还是？教育的本来目的不只是教，更重要的是育。育已不可求，教也岌岌可危。在高三的进度中，我们学到有价值的不多，失去的无价的却不少。人与人间的竞争与合作，合作是少，竞争才是真。我们自己也想一想，谁会真正愿意浪费自己的时间来帮助别人进步？尽管他得到的要比你失去的多的多？我承认自己没办法那么纯真，我只能时刻用：要想自己变的更强，必须让你的对手更强的想法来满足自己的私心又不失自己的内心。<br>&emsp;&emsp;想到这，我明白这个时代为什么有这么多“芙蓉姐姐”，“凤姐”，“犀利哥”了，是平常人失去了自己的内心。我也明白车延高的“羊羔体”为什么能得鲁迅文学奖了，是成功的人失去了自己的内心。无论是“我爸是李刚”还是“一切都是浮云”围观的我们，是否也在失去着自己的内心？<br>&emsp;&emsp;“高考至上”的观念，使我们失去了很多，而这失去的恶果又会在社会上重现。朋友们，如果你看到了我信手的涂鸦，请不要放在心上，这只是我无意间随意的想法。我没有屈原“举世皆浊我独清，众人皆醉我独醒”的志向，我也没有作“疯子”，“傻子”的勇气，我更不敢在高考洪涛中逆流而上，当然，我也不希望你有。有些事情不能改变，但我们可以从观念上认识它。我们可以这么逆来顺受，但一定要卧薪尝胆。拿不出成绩来，所说的一切都是空谈，没有能力，想做的一切都是空想，到头来只能成为笑柄。<br>&emsp;&emsp;偶然翻开了一个营养品的广告。上面的高考状元在介绍着自己成功的神话经验。一副得意洋洋的成功者的姿态。他介绍着那个营养品怎样使他超越大脑的极限，获得成功。我不禁在想，是否买不起那个营养品的人，注定无法超越，也注定要失败。<br>&emsp;&emsp;最后，要过年了，先祝大家新年快乐，身体健康。再祝所有高三的朋友们，在六月高考中取得理想成绩，进入理想大学。那个高考的状元还在笑，不管是在得意还是在嘲讽，都不重要，就像“浮云”时代里没有“赢家”一样，“高考至上”的教育观念下也注定没有“胜者”。</p>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © 微信：15137348047
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2011/07/12/281chahuanv/" class="pre-post btn btn-default" title='茶花女'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">茶花女</span>
+        </a>
+    
+    
+        <a href="/2010/07/25/279dadadeshijie/" class="next-post btn btn-default" title='大大的世界小小的你我'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">大大的世界小小的你我</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
 
 
-      </header>
-    
-    <div class="article-meta">
-      
-      <span class="article-date">
-  <i class="fa fa-date"></i>
-  <time class="dt-published" datetime="2011-02-03T04:20:20.000Z" itemprop="datePublished">2011年02月03日</time>
-</span>
-      
-  <div class="article-category">
-    <i class="fa fa-classify"></i>
-    <a class="article-category-link" href="/categories/思辨/">思辨</a>
-  </div>
+    <div id="comments">
+        
+	
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNzY0Ny8xNDE3OA==">
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  </script>
+</div>
 
-      
-        <span class="article-views">
-  <i class="fa fa-views"></i>
-  <i id="busuanzi_container_page_pv">
-      <i id="busuanzi_value_page_pv"></i>
-  </i>
-</span>
 
-      
-      
-<a href="/2011/02/03/280gaosansuixiang/#comments" class="article-comment-link">
-  
-    
-    
-    
-    
-    
-  
-  <i class="fa fa-commt"></i>
-  留言
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">文章目录</h3>
+        
+            <p>暂无目录</p>
+        
+    </div>
+</aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+	<i class="fa fa-chevron-up"></i>
 </a>
 
 
-    </div>
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>“充满自信时，记得要谦虚。身陷低谷时，还是要自信。”<br>“在做选择时，时刻要谨慎。作出决定后，一定要坚持。”<br>“忍无可忍时，试着要再忍。紧急需要时，迅速要献身。”<br>“做下等的事，不要怕丢人。身负重任时，勇敢去完成。”<br>“万事要尝试，不要总冒险。心胸坦荡荡，对人不阴险。”<br>“善恶要分明，对人无偏见。进不出风头，退不失节操。”<br>“小事也三思，大事要立断。”<br><a id="more"></a><br>&emsp;&emsp;我想这会是我高中生活的最后一个寒假了，看到案下压的初中为自己写的座右铭，眼睛不禁火辣辣的疼。我长大了，成人了。而我单纯的思想，童真的心灵好像也在随着我的成长而渐渐逝去。“我，是进步了，还是，退步了呢？”<br>&emsp;&emsp;每日都在阳光未出现时来到教室，在明月早已高悬时踏出校门，我们是否想过：每天这样忙碌的生活，我们为的到底是什么？考上个好大学？那考上好大学又是为了什么？找工作，赚钱？你的理想如果仅仅如此，那你大可不必为高三吃这么大的苦，你可以直接去学赚钱。也许会有人说：学习是为了成才。那你是否想过要成什么样的人才？高三，使我们题做的更加的快，也使我们脑袋转的更加的慢。高三改变了很多，它使吊灯从十点熄灭变成通宵未眠，它使眼镜厚度从两毫米变成半厘米。数学本应是最美的，逻辑的推理，思路的前进，无不使人感到峰回路转，柳暗花明。而在高三的阴影下，数学的美感荡然无存，只剩下题海中茫茫海面的单调和行舟人木讷机械的摇浆。作文本是灵感的火花，内心肆意的抒发，而在高三的重压中，它似乎与灵感格格不入了。语文老师说：“高考作文就是带着镣铐在跳舞。”我只是很难想象：带着镣铐跳的舞，是美，还是丑？与其说我们在高考的舞台上展示，倒不如说我们是他的奴隶，任其羞辱。<br>&emsp;&emsp;高三，我们做的题越来越多，学到的知识却越来越少。为了分数，我们学会了做选择时不用看题就得出答案；为了分数，我们学会投机取巧的押题猜题；为了分数，我们学会了格式化的写作文。最终得到的是什么呢？试卷上血淋淋的分数？或许内心虚荣的满足，就是对着一切最好的讽刺。你或许说应试技巧也是一种能力，是投机取巧的能力？是猜碰运气的能力？是压抑自己内心的能力？还是根本没有意义的能力？<br>&emsp;&emsp;经历过高考的人，就不会被什么困难挡住了。是的，高考是能锻炼人的，而为这锻炼付出的代价，是否有点太高了？十二年的寒窗，人生有多少十二年？五个？七个？还是？教育的本来目的不只是教，更重要的是育。育已不可求，教也岌岌可危。在高三的进度中，我们学到有价值的不多，失去的无价的却不少。人与人间的竞争与合作，合作是少，竞争才是真。我们自己也想一想，谁会真正愿意浪费自己的时间来帮助别人进步？尽管他得到的要比你失去的多的多？我承认自己没办法那么纯真，我只能时刻用：要想自己变的更强，必须让你的对手更强的想法来满足自己的私心又不失自己的内心。<br>&emsp;&emsp;想到这，我明白这个时代为什么有这么多“芙蓉姐姐”，“凤姐”，“犀利哥”了，是平常人失去了自己的内心。我也明白车延高的“羊羔体”为什么能得鲁迅文学奖了，是成功的人失去了自己的内心。无论是“我爸是李刚”还是“一切都是浮云”围观的我们，是否也在失去着自己的内心？<br>&emsp;&emsp;“高考至上”的观念，使我们失去了很多，而这失去的恶果又会在社会上重现。朋友们，如果你看到了我信手的涂鸦，请不要放在心上，这只是我无意间随意的想法。我没有屈原“举世皆浊我独清，众人皆醉我独醒”的志向，我也没有作“疯子”，“傻子”的勇气，我更不敢在高考洪涛中逆流而上，当然，我也不希望你有。有些事情不能改变，但我们可以从观念上认识它。我们可以这么逆来顺受，但一定要卧薪尝胆。拿不出成绩来，所说的一切都是空谈，没有能力，想做的一切都是空想，到头来只能成为笑柄。<br>&emsp;&emsp;偶然翻开了一个营养品的广告。上面的高考状元在介绍着自己成功的神话经验。一副得意洋洋的成功者的姿态。他介绍着那个营养品怎样使他超越大脑的极限，获得成功。我不禁在想，是否买不起那个营养品的人，注定无法超越，也注定要失败。<br>&emsp;&emsp;最后，要过年了，先祝大家新年快乐，身体健康。再祝所有高三的朋友们，在六月高考中取得理想成绩，进入理想大学。那个高考的状元还在笑，不管是在得意还是在嘲讽，都不重要，就像“浮云”时代里没有“赢家”一样，“高考至上”的教育观念下也注定没有“胜者”。</p>
-
-        
-            <div id="toc-article">
-                
-  <div class="widget-wrap" id="toc-wrap">
-    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
-    <div class="widget">
-      
-    </div>
-  </div>
 
 
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
             </div>
-        
-        
-          <blockquote id="copyright">
-              <p>原文链接: <a href="http://huisao.cc/2011/02/03/280gaosansuixiang/">http://huisao.cc/2011/02/03/280gaosansuixiang/</a></p>
-              <p>版权声明: 转载请注明出处.</p>
-          </blockquote>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <div class="article-tag-wrap">
-          
-
-          
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂文/">杂文</a></li></ul>
-
-          
-    <div class="social-share">
-      <span>分享到:</span>
-    </div>
-
-
-
         </div>
-      
-      
-        
-<nav id="article-nav">
-  
-    <a href="/2010/07/25/279dadadeshijie/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">older</strong>
-      <div class="article-nav-title">
-        
-          大大的世界小小的你我
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2011/07/12/281chahuanv/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
-      <div class="article-nav-title">
-        
-          茶花女
-        
-      </div>
-    </a>
-  
-</nav>
-
-      
-      
-        
-
-
-
-
-  <div id="comments"><div id="lv-container" data-uid="MTAyMC8zNzY0Ny8xNDE3OA==" data-id="city"></div></div>
-
-
-
-
-
-      
-    </footer>
-  </div>
-</article>
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-posts"></i> 最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/07/30/336偶记/">偶记</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/335拾笔尘沙12/">第一章 第十二回 惨遭社会毒打的仁义之君——宋襄公的称霸梦</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/334拾笔尘沙11/">第一章 第十一回 退避三舍与烛之武退秦师——晋国称霸之路</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/333拾笔尘沙10/">第一章 第十回 艰辛历尽终得正果——晋文公称霸</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/332拾笔尘沙9/">第一章 第九回 一代霸主的艰辛流亡路——重耳大器晚成</a>
-          </li>
-        
-      </ul>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/历史/" style="font-size: 15px;">历史</a> <a href="/tags/古典诗词/" style="font-size: 18.75px;">古典诗词</a> <a href="/tags/小说/" style="font-size: 13.75px;">小说</a> <a href="/tags/散文/" style="font-size: 11.25px;">散文</a> <a href="/tags/散文诗/" style="font-size: 12.5px;">散文诗</a> <a href="/tags/杂文/" style="font-size: 16.25px;">杂文</a> <a href="/tags/歌词/" style="font-size: 17.5px;">歌词</a> <a href="/tags/现代诗/" style="font-size: 20px;">现代诗</a> <a href="/tags/静夜思/" style="font-size: 10px;">静夜思</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-classify"></i> 分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/不忘初心/">不忘初心</a><span class="category-list-count">41</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/为你写诗/">为你写诗</a><span class="category-list-count">65</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/唐风/">唐风</a><span class="category-list-count">74</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/宋韵/">宋韵</a><span class="category-list-count">43</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思辨/">思辨</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/情为何物/">情为何物</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/拾笔尘沙/">拾笔尘沙</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/清风/">清风</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/看看世界/">看看世界</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/边走边唱/">边走边唱</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/静夜思/">静夜思</a><span class="category-list-count">17</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-archive"></i> 归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021年</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016年</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014年</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012年</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011年</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010年</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009年</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/">2008年</a><span class="archive-list-count">43</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007年</a><span class="archive-list-count">216</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/历史/">历史</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/古典诗词/">古典诗词</a><span class="tag-list-count">117</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小说/">小说</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/散文/">散文</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/散文诗/">散文诗</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/杂文/">杂文</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/歌词/">歌词</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/现代诗/">现代诗</a><span class="tag-list-count">159</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/静夜思/">静夜思</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-link"></i> 友情链接</h3>
-    <div class="widget">
-      <ul>
-      
-        <li>
-          <a href="http://huishao.cc">技术</a>
-        </li>
-      
-      </ul>
-    </div>
-  </div>
-
-
-  
-</aside>
-        
-      </div>
-      <a id="totop" href="#top"></a>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      <p>
-        <a href="/sitemap.xml">网站地图</a>
-        <span> | </span><a href="/atom.xml">订阅本站</a>
-        <span> | </span><a href="/about/">联系博主</a>
-      </p>
-      
-        <p>
-          <i class="fa fa-visitors"></i>
-          <i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>
-          ，
-          <i class="fa fa-views"></i>
-          <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>
-        </p>
-      
-      <p>
-        <span>Copyright &copy; 2023 珲少.</span>
-        <span>Theme by <a href="https://github.com/chaooo/hexo-theme-BlueLake/" target="_blank">BlueLake.</a></span>
-        <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo.</a></span>
-      </p>
-    </div>
-  </div>
-</footer>
-
-    </div>
-  </div>
-  <script src="/js/jquery-3.4.1.min.js"></script>
-<script src="/js/search.json.js"></script>
-
-  <script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-<script src="/js/script.js"></script>
+</div>
 
 
 
-
-
-  <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-  
-    <script src="/localshare/js/social-share.js"></script>
-    <script src="/localshare/js/qrcode.js"></script>
-  
-  
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-    <script>
-      (function(d, s) {
-        var j, e = d.getElementsByTagName('body')[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.appendChild(j);
-      })(document, 'script');
-    </script>
-  
-
-  
-
-  
-
-  
-  
-
-
-
+<script src="/js/app.js?rev=@@hash"></script>
 
 
 </body>

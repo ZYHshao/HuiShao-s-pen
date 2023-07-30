@@ -1,398 +1,288 @@
-<!DOCTYPE html>
-<html>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script> 
+<script>
+　　let models = [
+    "https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json",
+    "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+    "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+    "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",
+    "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",
+    "https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json"
+];
+let m = models[Math.round(Math.random()*5)];
+　　L2Dwidget.init({ 
+　　"model": {jsonPath:m,"scale": 1 }, 
+　　"display": { "position": "left", "width": 200, "height": 300,"hOffset": 0, "vOffset": -20 }, 
+　　"mobile": { "show": true, "scale": 0.5 }, 
+　　"react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 } });
+</script> 
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>如果这是青春 | 清风</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-    <meta name="description" content="珲少的文集">
-  
-  
-    <meta name="keywords" content="文集">
-  
-  
-    <link rel="alternate" href="/" title="清风">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-  
-  
-    <link rel="stylesheet" href="/localshare/css/share.css">
-  
-  
-  
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="清风">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://huisao.cc">
+    <meta name="referrer" content="no-referrer"/>
+    <!--SEO-->
+
+<meta name="description" content="珲少的文集"/>
+
+
+
+<meta name="keywords" content="文集"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>如果这是青春 | 清风</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="清风" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+
+
+    
 </head>
 
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">清风</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">窈窕君子 谁懂我心</a>
-        </h2>
-      
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.png)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='珲少'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                <h2> 窈窕君子 谁懂我心 </h2>
+            
+    	</div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        
-          <a class="main-nav-link" href="/."><i class="fa fa-home"></i> 首页</a>
-        
-          <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> 归档</a>
-        
-          <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> 关于</a>
-        
-          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> 订阅</a>
-        
-      </nav>
-    </div>
-    <div id="search-form">
-      <div id="result-mask" class="hide"></div>
-      <label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label>
-      <div id="result-wrap" class="hide">
-        <div id="search-result"></div>
-      </div>
-      <div class="hide">
-        <template id="search-tpl">
-          <div class="item">
-            <a href="/{path}" title="{title}">
-              <div class="title">{title}</div>
-              <div class="time">{date}</div>
-              <div class="tags">{tags}</div>
-            </a>
-          </div>
-        </template>
-      </div>
-    </div>
-  </div>
 </header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://huisao.cc">清风</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>主页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>归档</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="如果这是青春">
+            
+	            如果这是青春
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/情为何物">
+            情为何物
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/小说" title='小说'>
+                        小说
+                    </a>
+                
+            
+        </span>
+    </span>
+    
 
-      <div class="outer">
-        <section id="main"><article id="post-295ruguozheshiqingchun" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner">
     
-    
-      <header class="article-header">
         
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      如果这是青春
-    </h1>
-  
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2012/10/08</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>（1）<br>你对谁的无动于衷<br>谁又使你受宠若惊<br>唇尖的玫瑰红<br>你把谁的心刺痛<br><a id="more"></a><br>&emsp;&emsp;她一根根的抽着烟，目光呆滞。现在的生活给她最大的感觉就是不踏实，行尸走肉的一天天过着。她可以和一大群男男女女在KTV大声的唱，大声的笑，却也会，在去洗手间的间歇悄悄的哭，深深的心痛。    她时而安静，时而也嚣张，安静的有些颓废，嚣张的近乎疯狂。她感觉自己被空虚的网包裹了一层又一层，无法自拔，无法动弹，甚至，无法自由的喘息。    她一根根的抽着烟，在弥漫的烟雾中，她仿佛感到人也轻松了很多，有种飘飘然的感觉。看看手机，从认识他到现在已经三年了，从和他一起翘的第一节课，熬得第一个通宵，从第一次放下包袱，追求那所谓的自由，到现在，已经三年了。想到这，她突然感到心痛万分，一阵狂咳。她还依稀记得，也是三年前，入大学不久，另一个男孩，在她学抽第一支烟被呛的也如今日一样狂咳时，那男孩曾抢下她的烟，关心的问她怎么了，她不记得那时自己是怎么回答的，只知道当时挎着他的手臂，看也没看那男孩一眼……<br>她一根根的抽着烟，突然很想那个男孩……<br>（2）<br>天边的彩虹<br>是天空哭过才有的风景<br>最美的<br>是风雨后的晴<br>遗憾的是<br>当初的我们分不清<br>什么是友情，什么是爱情<br>&emsp;&emsp;她受邀参加他的婚礼，新郎很帅，新娘也很漂亮，幸福完满的一对恋人。她努力回想着当初他们坐同桌时的场景，傻傻的男孩，什么都听她的。她想到了他送她的半块橡皮，给她买的生日卡片，那卡片上歪七扭八的字迹还依稀可见，再看看眼前的这个西装革履的男人，她的嘴角露出一丝微笑。    那年夏天，他们都遵守了自己的诺言，考上了同一所大学，他们利用这个暑假一起去旅游，一起描画梦想实现的未来。在大学，她生气时，他总是出气筒，她难过时，他陪她一起难过，开心时，他分享她的快乐。直到有一天，他说他喜欢她，她先是一惊，然后转过了身……<br>&emsp;&emsp;她倒满了一杯酒，酒香四溢，吵闹的婚礼现场仿佛没人注意到她，想着想着，她心里也会有种苦涩。    从那转身之后，她的伤心便只有她的伤心，她的快乐也成了她一个人的寂寞。“我们还是最好的朋友，永远都是。”她那时曾对他说，“嗯，永远都是。”    她轻轻抚了抚眼睛，将酒端到他的面前，微笑着说：“祝你们白头偕老，一生幸福。”“谢谢，这杯我喝了。”他也带着幸福的笑。“不行，我一杯，你要三杯。”“这太不公平吧？”“不行，我说三杯就三杯！以前就是这样”“好，今天就陪你了。”“干，我们是最好的朋友，永远都是。”“嗯，永远都是。”    看着新郎和新娘相挽而去，她很开心，很幸福，却也很想哭，她现在才真正明白了自己的心在想什么，她不是不爱他，只是她一直以为转身过后，他会永远默默的在原地等候……</p>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © 微信：15137348047
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2012/10/14/296tianzi/" class="pre-post btn btn-default" title='天子的悲喜人生'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">天子的悲喜人生</span>
+        </a>
+    
+    
+        <a href="/2012/08/19/294mengxinghsifen/" class="next-post btn btn-default" title='梦醒时分'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">梦醒时分</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
 
 
-      </header>
-    
-    <div class="article-meta">
-      
-      <span class="article-date">
-  <i class="fa fa-date"></i>
-  <time class="dt-published" datetime="2012-10-08T07:48:08.000Z" itemprop="datePublished">2012年10月08日</time>
-</span>
-      
-  <div class="article-category">
-    <i class="fa fa-classify"></i>
-    <a class="article-category-link" href="/categories/情为何物/">情为何物</a>
-  </div>
+    <div id="comments">
+        
+	
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNzY0Ny8xNDE3OA==">
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  </script>
+</div>
 
-      
-        <span class="article-views">
-  <i class="fa fa-views"></i>
-  <i id="busuanzi_container_page_pv">
-      <i id="busuanzi_value_page_pv"></i>
-  </i>
-</span>
 
-      
-      
-<a href="/2012/10/08/295ruguozheshiqingchun/#comments" class="article-comment-link">
-  
-    
-    
-    
-    
-    
-  
-  <i class="fa fa-commt"></i>
-  留言
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">文章目录</h3>
+        
+            <p>暂无目录</p>
+        
+    </div>
+</aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+	<i class="fa fa-chevron-up"></i>
 </a>
 
 
-    </div>
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>（1）<br>你对谁的无动于衷<br>谁又使你受宠若惊<br>唇尖的玫瑰红<br>你把谁的心刺痛<br><a id="more"></a><br>&emsp;&emsp;她一根根的抽着烟，目光呆滞。现在的生活给她最大的感觉就是不踏实，行尸走肉的一天天过着。她可以和一大群男男女女在KTV大声的唱，大声的笑，却也会，在去洗手间的间歇悄悄的哭，深深的心痛。    她时而安静，时而也嚣张，安静的有些颓废，嚣张的近乎疯狂。她感觉自己被空虚的网包裹了一层又一层，无法自拔，无法动弹，甚至，无法自由的喘息。    她一根根的抽着烟，在弥漫的烟雾中，她仿佛感到人也轻松了很多，有种飘飘然的感觉。看看手机，从认识他到现在已经三年了，从和他一起翘的第一节课，熬得第一个通宵，从第一次放下包袱，追求那所谓的自由，到现在，已经三年了。想到这，她突然感到心痛万分，一阵狂咳。她还依稀记得，也是三年前，入大学不久，另一个男孩，在她学抽第一支烟被呛的也如今日一样狂咳时，那男孩曾抢下她的烟，关心的问她怎么了，她不记得那时自己是怎么回答的，只知道当时挎着他的手臂，看也没看那男孩一眼……<br>她一根根的抽着烟，突然很想那个男孩……<br>（2）<br>天边的彩虹<br>是天空哭过才有的风景<br>最美的<br>是风雨后的晴<br>遗憾的是<br>当初的我们分不清<br>什么是友情，什么是爱情<br>&emsp;&emsp;她受邀参加他的婚礼，新郎很帅，新娘也很漂亮，幸福完满的一对恋人。她努力回想着当初他们坐同桌时的场景，傻傻的男孩，什么都听她的。她想到了他送她的半块橡皮，给她买的生日卡片，那卡片上歪七扭八的字迹还依稀可见，再看看眼前的这个西装革履的男人，她的嘴角露出一丝微笑。    那年夏天，他们都遵守了自己的诺言，考上了同一所大学，他们利用这个暑假一起去旅游，一起描画梦想实现的未来。在大学，她生气时，他总是出气筒，她难过时，他陪她一起难过，开心时，他分享她的快乐。直到有一天，他说他喜欢她，她先是一惊，然后转过了身……<br>&emsp;&emsp;她倒满了一杯酒，酒香四溢，吵闹的婚礼现场仿佛没人注意到她，想着想着，她心里也会有种苦涩。    从那转身之后，她的伤心便只有她的伤心，她的快乐也成了她一个人的寂寞。“我们还是最好的朋友，永远都是。”她那时曾对他说，“嗯，永远都是。”    她轻轻抚了抚眼睛，将酒端到他的面前，微笑着说：“祝你们白头偕老，一生幸福。”“谢谢，这杯我喝了。”他也带着幸福的笑。“不行，我一杯，你要三杯。”“这太不公平吧？”“不行，我说三杯就三杯！以前就是这样”“好，今天就陪你了。”“干，我们是最好的朋友，永远都是。”“嗯，永远都是。”    看着新郎和新娘相挽而去，她很开心，很幸福，却也很想哭，她现在才真正明白了自己的心在想什么，她不是不爱他，只是她一直以为转身过后，他会永远默默的在原地等候……</p>
-
-        
-            <div id="toc-article">
-                
-  <div class="widget-wrap" id="toc-wrap">
-    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
-    <div class="widget">
-      
-    </div>
-  </div>
 
 
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
             </div>
-        
-        
-          <blockquote id="copyright">
-              <p>原文链接: <a href="http://huisao.cc/2012/10/08/295ruguozheshiqingchun/">http://huisao.cc/2012/10/08/295ruguozheshiqingchun/</a></p>
-              <p>版权声明: 转载请注明出处.</p>
-          </blockquote>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <div class="article-tag-wrap">
-          
-
-          
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小说/">小说</a></li></ul>
-
-          
-    <div class="social-share">
-      <span>分享到:</span>
-    </div>
-
-
-
         </div>
-      
-      
-        
-<nav id="article-nav">
-  
-    <a href="/2012/08/19/294mengxinghsifen/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">older</strong>
-      <div class="article-nav-title">
-        
-          梦醒时分
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2012/10/14/296tianzi/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
-      <div class="article-nav-title">
-        
-          天子的悲喜人生
-        
-      </div>
-    </a>
-  
-</nav>
-
-      
-      
-        
-
-
-
-
-  <div id="comments"><div id="lv-container" data-uid="MTAyMC8zNzY0Ny8xNDE3OA==" data-id="city"></div></div>
-
-
-
-
-
-      
-    </footer>
-  </div>
-</article>
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-posts"></i> 最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/07/30/336偶记/">偶记</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/335拾笔尘沙12/">第一章 第十二回 惨遭社会毒打的仁义之君——宋襄公的称霸梦</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/334拾笔尘沙11/">第一章 第十一回 退避三舍与烛之武退秦师——晋国称霸之路</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/333拾笔尘沙10/">第一章 第十回 艰辛历尽终得正果——晋文公称霸</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/07/332拾笔尘沙9/">第一章 第九回 一代霸主的艰辛流亡路——重耳大器晚成</a>
-          </li>
-        
-      </ul>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/历史/" style="font-size: 15px;">历史</a> <a href="/tags/古典诗词/" style="font-size: 18.75px;">古典诗词</a> <a href="/tags/小说/" style="font-size: 13.75px;">小说</a> <a href="/tags/散文/" style="font-size: 11.25px;">散文</a> <a href="/tags/散文诗/" style="font-size: 12.5px;">散文诗</a> <a href="/tags/杂文/" style="font-size: 16.25px;">杂文</a> <a href="/tags/歌词/" style="font-size: 17.5px;">歌词</a> <a href="/tags/现代诗/" style="font-size: 20px;">现代诗</a> <a href="/tags/静夜思/" style="font-size: 10px;">静夜思</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-classify"></i> 分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/不忘初心/">不忘初心</a><span class="category-list-count">41</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/为你写诗/">为你写诗</a><span class="category-list-count">65</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/唐风/">唐风</a><span class="category-list-count">74</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/宋韵/">宋韵</a><span class="category-list-count">43</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思辨/">思辨</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/情为何物/">情为何物</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/拾笔尘沙/">拾笔尘沙</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/清风/">清风</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/看看世界/">看看世界</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/边走边唱/">边走边唱</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/静夜思/">静夜思</a><span class="category-list-count">17</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-archive"></i> 归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021年</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016年</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014年</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012年</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011年</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010年</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009年</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/">2008年</a><span class="archive-list-count">43</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007年</a><span class="archive-list-count">216</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/历史/">历史</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/古典诗词/">古典诗词</a><span class="tag-list-count">117</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小说/">小说</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/散文/">散文</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/散文诗/">散文诗</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/杂文/">杂文</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/歌词/">歌词</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/现代诗/">现代诗</a><span class="tag-list-count">159</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/静夜思/">静夜思</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title"><i class="fa fa-link"></i> 友情链接</h3>
-    <div class="widget">
-      <ul>
-      
-        <li>
-          <a href="http://huishao.cc">技术</a>
-        </li>
-      
-      </ul>
-    </div>
-  </div>
-
-
-  
-</aside>
-        
-      </div>
-      <a id="totop" href="#top"></a>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      <p>
-        <a href="/sitemap.xml">网站地图</a>
-        <span> | </span><a href="/atom.xml">订阅本站</a>
-        <span> | </span><a href="/about/">联系博主</a>
-      </p>
-      
-        <p>
-          <i class="fa fa-visitors"></i>
-          <i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>
-          ，
-          <i class="fa fa-views"></i>
-          <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>
-        </p>
-      
-      <p>
-        <span>Copyright &copy; 2023 珲少.</span>
-        <span>Theme by <a href="https://github.com/chaooo/hexo-theme-BlueLake/" target="_blank">BlueLake.</a></span>
-        <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo.</a></span>
-      </p>
-    </div>
-  </div>
-</footer>
-
-    </div>
-  </div>
-  <script src="/js/jquery-3.4.1.min.js"></script>
-<script src="/js/search.json.js"></script>
-
-  <script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-<script src="/js/script.js"></script>
+</div>
 
 
 
-
-
-  <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-  
-    <script src="/localshare/js/social-share.js"></script>
-    <script src="/localshare/js/qrcode.js"></script>
-  
-  
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-    <script>
-      (function(d, s) {
-        var j, e = d.getElementsByTagName('body')[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.appendChild(j);
-      })(document, 'script');
-    </script>
-  
-
-  
-
-  
-
-  
-  
-
-
-
+<script src="/js/app.js?rev=@@hash"></script>
 
 
 </body>
